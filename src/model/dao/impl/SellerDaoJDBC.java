@@ -111,7 +111,7 @@ public class SellerDaoJDBC implements SellerDao {
            throw new DbException(e.getMessage());
         } finally {
             DB.closeStatement(st);
-            DB.closeStatement(st);
+            DB.closeResultSet(rs);
         }
     }
 
